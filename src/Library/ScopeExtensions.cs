@@ -1,4 +1,4 @@
-﻿namespace OpenTracing.Contrib.Semantics
+﻿namespace OpenTracing.Contrib.SemanticConventions
 {
     using System;
     using System.Threading.Tasks;

@@ -1,9 +1,9 @@
-﻿namespace OpenTracing.Contrib.Semantics
+﻿namespace OpenTracing.Contrib.SemanticConventions
 {
     using System;
     using System.Collections.Generic;
     using JetBrains.Annotations;
-    
+
     [PublicAPI]
     public static class LogBasedExtensions
     {
