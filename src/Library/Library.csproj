@@ -3,8 +3,8 @@
 
   <PropertyGroup>
     <TargetFrameworks>net4.5;netstandard2.0</TargetFrameworks>
-    <RootNamespace>OpenTracing.Contrib.Extensions</RootNamespace>
-    <AssemblyName>OpenTracing.Contrib.Extensions</AssemblyName>
+    <RootNamespace>OpenTracing.Contrib.Semantics</RootNamespace>
+    <AssemblyName>OpenTracing.Contrib.Semantics</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

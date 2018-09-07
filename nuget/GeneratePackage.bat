@@ -5,10 +5,10 @@ msbuild %~dp0\..\src\Library\Library.csproj /p:Configuration=Release /v:m
 
 REM exit if if failed
 if %errorlevel% neq 0 exit /b %errorlevel%
-xcopy /Y %~dp0\..\src\Library\bin\Release\net4.5\OpenTracing.Contrib.Extensions.dll %~dp0\lib\net45
-xcopy /Y %~dp0\..\src\Library\bin\Release\net4.5\OpenTracing.Contrib.Extensions.pdb %~dp0\lib\net45
-xcopy /Y %~dp0\..\src\Library\bin\Release\netstandard2.0\OpenTracing.Contrib.Extensions.dll %~dp0\lib\netstandard2.0
-xcopy /Y %~dp0\..\src\Library\bin\Release\netstandard2.0\OpenTracing.Contrib.Extensions.pdb %~dp0\lib\netstandard2.0
+xcopy /Y %~dp0\..\src\Library\bin\Release\net4.5\OpenTracing.Contrib.SemanticConventions.dll %~dp0\lib\net45
+xcopy /Y %~dp0\..\src\Library\bin\Release\net4.5\OpenTracing.Contrib.SemanticConventions.pdb %~dp0\lib\net45
+xcopy /Y %~dp0\..\src\Library\bin\Release\netstandard2.0\OpenTracing.Contrib.SemanticConventions.dll %~dp0\lib\netstandard2.0
+xcopy /Y %~dp0\..\src\Library\bin\Release\netstandard2.0\OpenTracing.Contrib.SemanticConventions.pdb %~dp0\lib\netstandard2.0
 
 echo.
 echo.
