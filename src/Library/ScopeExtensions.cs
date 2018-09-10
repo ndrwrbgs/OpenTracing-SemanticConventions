@@ -32,14 +32,14 @@
             }
         }
 
-        public static async Task ExecuteInScopeAsync(
+        internal static async Task ExecuteInScopeAsync(
             [NotNull] this ISpanBuilder spanBuilder,
             [NotNull] Func<ISpan, Task> action)
         {
             throw new NotImplementedException();
         }
 
-        public static async Task<T> ExecuteInScopeAsync<T>(
+        internal static async Task<T> ExecuteInScopeAsync<T>(
             [NotNull] this ISpanBuilder spanBuilder,
             [NotNull] Func<Task<T>> action)
         {

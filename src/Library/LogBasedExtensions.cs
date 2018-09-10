@@ -4,6 +4,9 @@
     using System.Collections.Generic;
     using JetBrains.Annotations;
 
+    /// <summary>
+    /// Extensions for <see cref="ISpan.Log(IEnumerable{KeyValuePair{string,object}})"/> based on <see cref="KnownLogFieldNames"/> and <see cref="KnownLogFieldValues"/>
+    /// </summary>
     [PublicAPI]
     public static class LogBasedExtensions
     {
@@ -17,13 +20,24 @@
                     new Dictionary<string, object>(2)
                     {
                         [KnownLogFieldNames.Event] = KnownLogFieldValues.Error,
+                        [KnownLogFieldNames.Error.Kind] = exception.GetType().Name,
                         [KnownLogFieldNames.Error.Object] = exception
                     });
         }
-
+        
+#if NETSTANDARD2_0
         public static ISpan LogMessage(
             [NotNull] this ISpan span,
-            /*TODO: FormattableString*/
+            FormattableString formattableString)
+        {
+            return LogMessage(
+                span,
+                formattableString.Format,
+                formattableString.GetArguments());
+        }
+#else
+        public static ISpan LogMessage(
+            [NotNull] this ISpan span,
             string message)
         {
             return span
@@ -34,6 +48,7 @@
                         [KnownLogFieldNames.Message] = message
                     });
         }
+#endif
 
         [StringFormatMethod("messageFormat")]
         public static ISpan LogMessage(
