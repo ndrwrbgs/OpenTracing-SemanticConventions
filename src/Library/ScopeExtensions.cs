@@ -36,6 +36,7 @@
             [NotNull] this ISpanBuilder spanBuilder,
             [NotNull] Func<ISpan, Task> action)
         {
+            // TODO: I think these are actually in OpenTracing-Extensions now
             throw new NotImplementedException();
         }
 
