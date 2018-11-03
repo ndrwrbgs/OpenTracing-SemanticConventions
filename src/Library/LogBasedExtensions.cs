@@ -17,7 +17,7 @@
             span.SetTag(KnownTagNames.Error, true);
             return span
                 .Log(
-                    new Dictionary<string, object>(2)
+                    new Dictionary<string, object>(3)
                     {
                         [KnownLogFieldNames.Event] = KnownLogFieldValues.Error,
                         [KnownLogFieldNames.Error.Kind] = exception.GetType().Name,
