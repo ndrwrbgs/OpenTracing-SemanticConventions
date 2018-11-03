@@ -55,6 +55,8 @@ namespace OpenTracing.Contrib.SemanticConventions
 
         /// <summary>
         /// Logs a formatable message in a structured-logging supported way (the format items are kept separate from the format)
+        ///
+        /// TODO: This is not part of the SemanticConventions, should we propose it?
         /// </summary>
         [StringFormatMethod("messageFormat")]
         public static ISpan LogMessage(
