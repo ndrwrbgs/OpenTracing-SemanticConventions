@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>OpenTracing.Contrib.SemanticConventions</id>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <authors>ndrwrbgs</authors>
     <owners>ndrwrbgs</owners>
     <licenseUrl>https://github.com/ndrwrbgs/OpenTracing-SemanticConventions/blob/master/LICENSE</licenseUrl>
@@ -10,7 +10,7 @@
     <iconUrl>http://opentracing.io/img/favicon-32x32.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Extensions on top of the OpenTracing APIs, following the OpenTracing Semantic Conventions spec.</description>
-    <releaseNotes>Initial</releaseNotes>
+    <releaseNotes>Fixing LogError and ExecuteInScope methods</releaseNotes>
     <copyright>Copyright 2018</copyright>
     <tags>OpenTracing ExecuteInScope Functional Semantics</tags>
     <dependencies>
